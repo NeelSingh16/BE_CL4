@@ -1,0 +1,186 @@
+✅ Practical 1: Import Data from Different Sources (ETL – Extraction & Loading)
+🎯 Aim (simple)
+
+Import data from sources like Excel / SQL / APIs and load it into Power BI.
+
+🛠️ What you need
+Power BI Desktop installed
+Sample dataset (Excel file like Products.xlsx)
+🔹 Step-by-Step Procedure
+Part A: Import Excel Data
+Open Power BI Desktop
+Click Home → Get Data → Excel
+Select your Excel file (Products.xlsx)
+Click Open
+In Navigator:
+Select table (e.g., Products)
+Click Edit (to open Power Query)
+In Power Query:
+Check data (optional cleaning)
+Click Close & Load
+
+✅ Data is now loaded into Power BI
+
+Part B: Import Data from Online Source (OData Feed)
+Go to Home → Get Data → OData Feed
+
+Paste this URL:
+
+http://services.odata.org/V3/Northwind/Northwind.svc/
+Click OK
+In Navigator:
+Select Orders table
+Click Edit
+Load data:
+Click Close & Load
+🧠 What you actually did
+Extracted data (Excel + API)
+Loaded into Power BI
+👉 This is ETL (Extraction + Loading)
+💡 Viva Points
+Data sources: Excel, SQL Server, APIs
+Data integrity: validation, cleaning
+Handling large data: batching, indexing
+
+✅ Practical 2: Data Visualization using ETL Process
+🎯 Aim
+
+Create dashboards & visuals from the data loaded in Practical 1.
+
+🔹 Step-by-Step Procedure
+Step 1: Create Chart – Units in Stock by Product
+Go to Report View
+From Fields:
+Drag UnitsInStock → Canvas
+Drag ProductName → Axis
+Change visualization:
+Select Bar Chart
+Sort:
+Click 3 dots → Sort by UnitsInStock
+Step 2: Create Line Chart – Sales by Year
+Drag:
+OrderDate → Axis
+LineTotal → Values
+Change visualization to:
+Line Chart
+Step 3: Create Map Visualization
+Drag:
+ShipCountry → Canvas
+Power BI auto creates Map
+Drag:
+LineTotal → Values
+
+👉 Bubble size shows sales per country
+
+Step 4: Interaction (Important for Viva)
+Click any country (e.g., Canada)
+Observe:
+Other charts automatically filter
+
+👉 This is called cross-filtering
+
+🧠 What you actually did
+Used ETL processed data
+Created:
+Bar chart
+Line chart
+Map
+Built an interactive dashboard
+💡 Viva Points
+🔹 What is ETL?
+Extract → Get data
+Transform → Clean/process
+Load → Store/use
+🔹 Why ETL helps visualization?
+Clean data = better charts
+Structured data = faster analysis
+🔹 ETL vs ELT
+ETL → Transform before loading
+ELT → Transform after loading
+🧾 Final Output (What to show in lab)
+Loaded dataset
+3 visuals:
+Product stock chart
+Sales line chart
+Country map
+Interactive dashboard
+
+✅ Practical 4: Data Analysis and Visualization using Advanced Excel
+🎯 Aim (write this)
+
+To perform data analysis and create visualizations using advanced Excel features.
+
+🛠️ What you need
+Microsoft Excel (2013 or above)
+Dataset (use the file I gave: practical4_sales_large.xlsx)
+🔹 Step-by-Step Procedure (Lab Execution)
+✅ Step 1: Open Dataset
+Open Excel
+Click File → Open
+Load your dataset (practical4_sales_large.xlsx)
+✅ Step 2: Convert Data into Table
+Select all data
+Press Ctrl + T
+Click OK
+
+👉 This makes filtering & analysis easier
+
+✅ Step 3: Create Pivot Table (MOST IMPORTANT STEP)
+Select data
+Go to Insert → PivotTable
+Click OK
+📊 Create Analysis 1: Sales by Region
+Drag:
+Region → Rows
+Sales → Values
+
+👉 Output: Total sales per region
+
+📊 Create Analysis 2: Profit by Product
+Drag:
+Product → Rows
+Profit → Values
+📊 Create Analysis 3: Sales by Year
+Drag:
+Year → Rows
+Sales → Values
+✅ Step 4: Create Charts (Visualization)
+🔹 Chart 1: Bar Chart
+Select Pivot Table (Region vs Sales)
+Go to Insert → Bar Chart
+🔹 Chart 2: Line Chart (Trend)
+Select Year vs Sales
+Insert → Line Chart
+🔹 Chart 3: Pie Chart (Product Distribution)
+Select Product vs Profit
+Insert → Pie Chart
+✅ Step 5: Apply Filters (Advanced Feature)
+Click Pivot Table
+Drag:
+Region → Filters
+
+👉 Now you can filter data dynamically
+
+✅ Step 6: Use Slicers (VERY IMPRESSIVE IN VIVA)
+Click Pivot Table
+Go to Insert → Slicer
+Select:
+Region
+Product
+
+👉 This creates clickable filters (looks professional)
+
+✅ Step 7: Conditional Formatting (Optional but adds marks)
+Select Sales column
+Go to:
+Home → Conditional Formatting → Color Scale
+
+👉 Highlights high/low values
+
+📊 Final Output (What examiner expects)
+Pivot Tables
+3 Charts:
+Bar chart
+Line chart
+Pie chart
+Filters / Slicers
