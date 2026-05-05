@@ -42,7 +42,7 @@ Data sources: Excel, SQL Server, APIs
 Data integrity: validation, cleaning
 Handling large data: batching, indexing
 
-✅ Practical 2: Data Visualization using ETL Process
+✅ Practical 2 and 3: Data Visualization using ETL Process
 🎯 Aim
 
 Create dashboards & visuals from the data loaded in Practical 1.
